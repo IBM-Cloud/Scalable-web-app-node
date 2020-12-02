@@ -14,36 +14,37 @@ variable "cluster_name" {
 }
 
 variable "machine_type" {
-   default = "b2c.4x16"
-   description = "Name of machine type from `ibmcloud ks flavors --zone <ZONE>`"
+  default     = "b2c.4x16"
+  description = "Name of machine type from `ibmcloud ks flavors --zone <ZONE>`"
 }
 variable "hardware" {
-   default = "shared"
-   description = "The level of hardware isolation for your worker node. Use 'dedicated' to have available physical resources dedicated to you only, or 'shared' to allow physical resources to be shared with other IBM customers. For IBM Cloud Public accounts, the default value is shared. For IBM Cloud Dedicated accounts, dedicated is the only available option."
+  default     = "shared"
+  description = "The level of hardware isolation for your worker node. Use 'dedicated' to have available physical resources dedicated to you only, or 'shared' to allow physical resources to be shared with other IBM customers. For IBM Cloud Public accounts, the default value is shared. For IBM Cloud Dedicated accounts, dedicated is the only available option."
 }
 
 variable "datacenter" {
-  default = "dal10"
+  type        = string
   description = "Zone from `ibmcloud ks zones --provider classic`"
 }
 
 variable "default_pool_size" {
-  default = "3"
-  description = "How many worker nodes for the new Kubernetes cluster"
+  default     = "3"
+  description = "Number of worker nodes for the new OpenShift cluster"
 }
 
 variable "private_vlan_num" {
-  default = "1256"
+  type        = string
   description = "Number for private VLAN from `ibmcloud ks vlans --zone <ZONE>`"
 }
 
 variable "public_vlan_num" {
-  default = "1410"
+  type        = string
   description = "Number for public VLAN from `ibmcloud ks vlans --zone <ZONE>`"
 }
 
-variable kube_version {
-  default = "4.5.18_openshift"
+variable "kube_version" {
+  default     = "4.5.18_openshift"
+  description = "Version of Kubernetes to apply to the new OpenShift cluster"
 }
 
 variable "cluster_namespace" {
