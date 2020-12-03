@@ -14,7 +14,7 @@ variable "cluster_name" {
 }
 
 variable "machine_type" {
-  default     = "b2c.4x16"
+  default     = "b3c.4x16"
   description = "Name of machine type from `ibmcloud ks flavors --zone <ZONE>`"
 }
 variable "hardware" {
