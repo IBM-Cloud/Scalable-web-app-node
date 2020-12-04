@@ -6,10 +6,10 @@ RUN yum install -y nodejs
 RUN mkdir /app
 WORKDIR /app
 
-COPY package.json /app
+COPY nodejs-express-app/package.json /app
 RUN npm install --only=prod
-COPY server /app/server
-COPY public /app/public
+COPY nodejs-express-app/server /app/server
+COPY nodejs-express-app/public /app/public
 
 ENV NODE_ENV production
 ENV PORT 3000
