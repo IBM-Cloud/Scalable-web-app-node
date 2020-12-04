@@ -1,3 +1,4 @@
 [submodule "nodejs-express-app"]
 	path = nodejs-express-app
 	url = https://github.com/IBM/nodejs-express-app.git
+	branch = master
