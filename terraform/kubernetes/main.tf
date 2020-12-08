@@ -1,5 +1,5 @@
 terraform {
-  required_version = "0.12"
+  required_version = "terraform_0.12"
 }
 
 resource "random_string" "random" {
