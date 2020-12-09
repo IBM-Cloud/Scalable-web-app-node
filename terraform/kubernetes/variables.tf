@@ -56,3 +56,8 @@ variable "container_registry_namespace" {
   type        = string
   description = "IBM Container Registry namespace to save image into. NOTE: If the namespace does not exist, it will be created."
 }
+
+variable "TF_VERSION" {
+  default     = "0.12"
+  description = "Terraform engine version to be used in Schematics"
+}
