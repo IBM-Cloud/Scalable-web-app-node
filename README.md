@@ -80,7 +80,7 @@ If you use the IBM Cloud developer workflow, you also get:
 
 Before you begin, you should decide on the type of deployment environment you want to target for your app. The IBM Cloud platform offers many types of environments, but the most common for cloud native apps are the IBM Kubernetes Service (IKS), Red Hat OpenShift clusters, or Cloud Foundry.
 
->We recommend that you create an IKS cluster ahead of time and deploy your application there. Creating an IKS cluster can take 15-30 minutes, but it's worth the wait. IKS runs your app inside orchestrated containers, and this option represents best-practice architecture for cloud native applications. To create an IKS cluster, you need a billable account. (That is, you either you need a credit card that is associated with your account for identity verification, or you need an IBM Cloud subscription). However, IKS offers a free cluster for 30 days, so you have plenty of time to try your app first.
+>We recommend that you create an IKS cluster ahead of time and deploy your application there. Creating an IKS cluster can take 15-30 minutes, but it's worth the wait. IKS runs your app inside orchestrated containers, and this option represents best-practice architecture for cloud native applications. To create an IKS cluster, you need a billable account. (That is, you either you need a credit card that is associated with your account for identity verification, or you need an IBM Cloud subscription). However, IKS offers a free cluster for 30 days, so you have plenty of time to try your app first. **NOTE:** If you decide to setup your cloud development environment using the [IBM Cloud Schematics](#Setting-up-from-the-IBM-Cloud-Schematics) process described below, an IKS cluster will be created for you.
 
 >Red Hat OpenShift, like IKS, is based on Kubernetes and represents best-practice architecture. OpenShift is especially good for hybrid environments as it can be run on IBM Cloud, in your own data center, or on the edge. OpenShift also requires a billable account but currently does not offer a free tier.
 
@@ -107,6 +107,10 @@ ibmcloud dev create
 ```
 
 Follow the prompts and select the starter kit of interest (`Node.js Express App`) when the time comes. This sets up the CI/CD toolchain, creates a remote source code repo, clones the repo to your local machine, and starts the initial deployment.
+
+### Setting up from IBM Cloud Schematics
+
+Follow the [README](https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/README.md) instructions for creating and deploying your application via IBM Cloud Schematics, which uses Terraform templates to create an IKS cluster and IBM Cloud DevOps toolchain. 
 
 >  Your machine must be configured for SSH access to your IBM Cloud GitLab account (for example, https://us-south.git.cloud.ibm.com/profile/keys) to clone the application code. For more information, see the [GitLab docs](https://us-south.git.cloud.ibm.com/help/ssh/README).
 
