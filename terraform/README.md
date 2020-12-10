@@ -22,7 +22,7 @@ IBM Cloud Schematics delivers Terraform-as-a-Service so that you can use a high-
 
 ## Steps
 
-Follow these two easy steps below to create an IBM Cloud Schematics Workspace, and apply a Terraform template to create a Kubernetes cluster and deploy a Node.js Express application to it via an IBM Cloud DevOps Toolchain.
+Follow these two easy steps below to create an IBM Cloud Schematics Workspace, and apply a Terraform template, which will create a Kubernetes cluster and deploy a Node.js Express application to it via an IBM Cloud DevOps Toolchain.
 
 ### Create an IBM Cloud Schematics Workspace
 
@@ -36,7 +36,7 @@ Follow these two easy steps below to create an IBM Cloud Schematics Workspace, a
 </p>
 
 Click the button above for the desired cluster deployment type (Left: Vanilla Kubernetes, Right: OpenShift Kubernetes). This will take you to the "Create a Schematics Workspace" page. Fill out the required fields and click the "Create" button. 
-> **NOTE:** The Terraform templates in this repository will automatically be imported into the new workspace, and the Terraform engine version will be v0.12.
+> **NOTE:** Based on the button clicked, the corresponding Terraform template from this repository will automatically be imported into the new workspace, and the Terraform engine version will be v0.12.
 
 ### Generate and Apply Plan
 
@@ -44,12 +44,12 @@ Under the "Variables" section of the "Settings" page, enter the desired values f
 
 After entering all the required values for the variables, you may optionally click the "Save changes" button to save those values for future use within the same workspace. Otherwise, click the "Generate plan" button at the top of the page. This will take you to the "Activity" page, where it will show you the status of the generating plan.  
 
-Once the plan has finished generating, click the "Apply plan" button. Note, this step can take a long time to complete (usually between 20-30 minutes), due to the creation of a new Kubernetes cluster. You can follow along with the progress of this step by clicking the "View log" link next to the corresponding step. Once the plan has been applied, you will be provided with a URL to the generated IBM Cloud DevOps Toolchain, which can be found near the end of the log file on a line beginning with "View the toolchain at:".
+Once the plan has finished generating, click the "Apply plan" button. Note, this step can take a long time to complete (usually between 20-30 minutes, but can take longer), due to the creation of a new Kubernetes cluster. You can follow along with the progress of this step by clicking the "View log" link next to the corresponding step. Once the plan has been applied, you will be provided with a URL to the generated IBM Cloud DevOps Toolchain, which can be found near the end of the log file on a line beginning with "View the toolchain at:".
 
 
 
->IMPORTANT: If you decide to apply your plan a second time, the previously created Kubernetes cluster and any applications deployed to it will be destroyed and a new cluster will be created. 
+>IMPORTANT: If you decide to apply your plan a second time, the previously created Kubernetes cluster and any applications deployed to it will be destroyed, and a new cluster will be created. 
 
 ## More Information
 
-For more detailed information about this workflow, go to the [Getting started with IBM Cloud Schematics and Terraform](https://cloud.ibm.com/docs/schematics?topic=schematics-getting-started) IBM Cloud Docs page.
+For more detailed information about this workflow, go to the [Getting started with IBM Cloud Schematics and Terraform](https://cloud.ibm.com/docs/schematics?topic=schematics-getting-started) page on the IBM Cloud Docs website.
