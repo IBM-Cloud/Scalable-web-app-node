@@ -28,7 +28,7 @@ Follow these two easy steps to create an IBM Cloud Schematics workspace and appl
 
 Click one of the following options for the cluster deployment type (Left: Vanilla Kubernetes, Right: OpenShift Kubernetes). This action takes you to the "Create a Schematics Workspace" page. Complete the required fields on that page, and then click **Create**.
 
-> **NOTE:** Based on which option you select, the corresponding Terraform template from this repository is automatically imported into the new workspace. The Terraform engine version is v0.12.
+> **Note:** Based on which option you select, the corresponding Terraform template from this repository is automatically imported into the new workspace. The Terraform engine version is v0.12.
 
 <p align="center">
     <a href="https://cloud.ibm.com/schematics/workspaces/create?repository=https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/kubernetes&terraform_version=terraform_v0.12">
