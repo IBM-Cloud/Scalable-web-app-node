@@ -47,7 +47,7 @@ Click one of the following options for the cluster deployment type (Left: Vanill
 
 3. Optional. Click **Generate plan**. This action takes you to the "Activity" page, where the status of the generating plan is displayed.  
 
-4. After the plan is finished generating, click **Apply plan**. Note, this step takes some time to complete (usually between 20-30 minutes, but it can take longer), due to the creation of a new Kubernetes cluster.
+4. After you enter all the values for the variables and are satisfied with the changes, click **Apply plan**. Note, this step takes some time to complete (usually between 20-30 minutes, but it can take longer), due to the creation of a new Kubernetes cluster.
 
 5. Follow the progress of this step by clicking the **View log** link next to the corresponding step.
 
