@@ -39,5 +39,5 @@ module "ibm-kubernetes-toolchain" {
   container_registry_namespace = var.container_registry_namespace
   toolchain_template_repo = "https://github.com/open-toolchain/secure-kube-toolchain"
   pipeline_type     = "tekton"
-  branch            = "dual-template"
+  branch            = "master"
 }
