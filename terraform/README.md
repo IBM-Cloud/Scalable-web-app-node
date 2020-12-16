@@ -32,10 +32,10 @@ Click one of the following options for the cluster deployment type (Left: Vanill
 
 <p align="center">
     <a href="https://cloud.ibm.com/schematics/workspaces/create?repository=https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/simple-kube&terraform_version=terraform_v0.12">
-    <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to Kubernetes on IBM Cloud">
+    <img src="https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/images/Deploy_to_kube.png" alt="Deploy to Kubernetes on IBM Cloud">
     </a>
     <a href="https://cloud.ibm.com/schematics/workspaces/create?repository=https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/simple-openshift&terraform_version=terraform_v0.12">
-    <img src="https://cloud.ibm.com/devops/setup/deploy/button_x2.png" alt="Deploy to OpenShift on IBM Cloud">
+    <img src="https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/images/Deploy_to_Openshift.png" alt="Deploy to OpenShift on IBM Cloud">
     </a>
 </p>
 
