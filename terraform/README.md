@@ -30,14 +30,8 @@ Click one of the following options for the cluster deployment type (Left: Vanill
 
 > **Note:** Based on which option you select, the corresponding Terraform template from this repository is automatically imported into the new workspace. The Terraform engine version is v0.12.
 
-<p align="center">
-    <a href="https://cloud.ibm.com/schematics/workspaces/create?repository=https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/simple-kube&terraform_version=terraform_v0.12">
-    <img src="https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/images/Deploy_to_kube.png" alt="Deploy to Kubernetes on IBM Cloud">
-    </a>
-    <a href="https://cloud.ibm.com/schematics/workspaces/create?repository=https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/simple-openshift&terraform_version=terraform_v0.12">
-    <img src="https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/images/Deploy_to_Openshift.png" alt="Deploy to OpenShift on IBM Cloud">
-    </a>
-</p>
+[![Deploy to Kubernetes on IBM Cloud](images/Deploy_to_kube.png)](https://cloud.ibm.com/schematics/workspaces/create?repository=https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/simple-kube&terraform_version=terraform_v0.12)
+[![Deploy to OpenShift on IBM Cloud](images/Deploy_to_Openshift.png)](https://cloud.ibm.com/schematics/workspaces/create?repository=https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/simple-openshift&terraform_version=terraform_v0.12)
 
 ### Step 2: Generate and apply the Terraform execution plan
 
