@@ -24,9 +24,11 @@ IBM Cloud Schematics delivers Terraform-as-a-Service so that you can use a high-
 
 Follow these two easy steps to create an IBM Cloud Schematics workspace and apply a Terraform template. When you apply the template, a Kubernetes cluster is created, and a Node.js Express application is deployed to it by using an IBM Cloud DevOps toolchain.
 
+There are two types of IBM Cloud DevOps toolchain options available with this application: classic and GitSecure. The classic toolchain has a code repository, delivery pipeline, and web IDE. The GitSecure toolchain has the same features as the classic, but also includes the Vulnerability Advisor to help developers design a secure app with little effort.
+
 ### Step 1: Create an IBM Cloud Schematics workspace
 
-Click one of the following options for the cluster deployment and toolchain type (the first two use a classic toolchain and the other two use a GitSecure toolchain). This action takes you to the "Create a Schematics Workspace" page. Complete the required fields on that page, and then click **Create**.
+Click one of the following options for the cluster deployment and toolchain type (the first two options use a classic toolchain and the other two use a GitSecure toolchain). This action takes you to the "Create a Schematics Workspace" page. Complete the required fields on that page, and then click **Create**.
 
 > **Note:** Based on which option you select, the corresponding Terraform template from this repository is automatically imported into the new workspace. The Terraform engine version is v0.12.
 
