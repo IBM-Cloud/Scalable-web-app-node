@@ -26,12 +26,15 @@ Follow these two easy steps to create an IBM Cloud Schematics workspace and appl
 
 ### Step 1: Create an IBM Cloud Schematics workspace
 
-Click one of the following options for the cluster deployment type (Left: Vanilla Kubernetes, Right: OpenShift Kubernetes). This action takes you to the "Create a Schematics Workspace" page. Complete the required fields on that page, and then click **Create**.
+Click one of the following options for the cluster deployment and toolchain type (the first two use a classic toolchain and the other two use a GitSecure toolchain). This action takes you to the "Create a Schematics Workspace" page. Complete the required fields on that page, and then click **Create**.
 
 > **Note:** Based on which option you select, the corresponding Terraform template from this repository is automatically imported into the new workspace. The Terraform engine version is v0.12.
 
 [![Deploy to Kubernetes on IBM Cloud](images/Deploy_to_kube.png)](https://cloud.ibm.com/schematics/workspaces/create?repository=https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/simple-kube&terraform_version=terraform_v0.12)
 [![Deploy to OpenShift on IBM Cloud](images/Deploy_to_Openshift.png)](https://cloud.ibm.com/schematics/workspaces/create?repository=https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/simple-openshift&terraform_version=terraform_v0.12)
+
+[![Deploy to Kubernetes on IBM Cloud (Secured)](images/Deploy_to_kube_Secured.png)](https://cloud.ibm.com/schematics/workspaces/create?repository=https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/secure-kube&terraform_version=terraform_v0.12)
+[![Deploy to OpenShift on IBM Cloud (Secured)](images/Deploy_to_Openshift_Secured.png)](https://cloud.ibm.com/schematics/workspaces/create?repository=https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/secure-openshift&terraform_version=terraform_v0.12)
 
 ### Step 2: Generate and apply the Terraform execution plan
 
