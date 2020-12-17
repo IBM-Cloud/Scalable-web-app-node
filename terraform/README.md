@@ -30,7 +30,7 @@ In Step 1, the first two buttons use the [simple-helm-toolchain](https://github.
 
 ## Steps
 
-Follow these two easy steps to create an IBM Cloud Schematics workspace and apply a Terraform template. When you apply the template, a Kubernetes cluster is created, and a Node.js Express application is deployed to it by using an IBM Cloud DevOps toolchain.
+Follow these two easy steps to create an IBM Cloud Schematics workspace and apply a Terraform execution plan. When you apply the plan, a Kubernetes cluster is created, and a Node.js Express application is deployed to it by using an IBM Cloud DevOps toolchain.
 
 ### Step 1: Create an IBM Cloud Schematics workspace
 
@@ -44,13 +44,13 @@ Click one of the following options for the cluster deployment target and toolcha
 [![Deploy to Kubernetes on IBM Cloud (Secured)](images/Deploy_to_kube_Secured.png)](https://cloud.ibm.com/schematics/workspaces/create?repository=https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/secure-kube&terraform_version=terraform_v0.12)
 [![Deploy to OpenShift on IBM Cloud (Secured)](images/Deploy_to_Openshift_Secured.png)](https://cloud.ibm.com/schematics/workspaces/create?repository=https://github.com/IBM-Cloud/Scalable-web-app-node/tree/master/terraform/secure-openshift&terraform_version=terraform_v0.12)
 
-### Step 2: Generate and apply the Terraform execution plan
+### Step 2: Apply the Terraform execution plan
 
 1. In the **Variables** section of the "Settings" page, enter the values for each variable. Required fields are those without default values. However, default values can be overridden.  
 
 2. Optional. After you enter all the required values for the variables, click **Save changes** to save those values for future use within the same workspace.
 
-3. Optional. Click **Generate plan**. This action takes you to the "Activity" page, where the status of the generating plan is displayed.  
+3. Optional. Click **Generate plan**. This action creates a Terraform execution plan, which also checks your configuration for syntax errors. It takes you to the “Activity” page, where you can review log files for errors and IBM Cloud resources that must be created, modified, or deleted to achieve the state of the Terraform template.  
 
 4. After you enter all the values for the variables and are satisfied with the changes, click **Apply plan**.
   **Note:** This step takes some time to complete (usually between 20-30 minutes, but it can take longer), due to the creation of a new Kubernetes cluster.
@@ -60,6 +60,12 @@ Click one of the following options for the cluster deployment target and toolcha
 6. After the plan is applied, view the URL to the generated IBM Cloud DevOps toolchain, which is located near the end of the log file on a line that begins with "View the toolchain at:."
 
 >IMPORTANT: If you apply your plan a second time, the previously created Kubernetes cluster and any applications deployed to it are destroyed, and a new cluster is created.
+
+## Next steps
+
+For information about viewing your app, see [Monitor application health](https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-scalable-webapp-kubernetes#scalable-webapp-kubernetes-monitor_application)
+
+For information about scaling your app. see [Scale Kubernetes pods](https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-scalable-webapp-kubernetes#scalable-webapp-kubernetes-scale_cluster).
 
 ## Related information
 
