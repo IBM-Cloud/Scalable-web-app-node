@@ -24,7 +24,7 @@ This scalable web application simplifies the "Deploy to IBM Cloud" workflow. It 
 
 Two types of DevOps toolchain pipeline structures are available with this application:
 * Classic pipeline structure
-* Git secure pipeline structure
+* GitSecure pipeline structure
 
 In Step 1, the first two buttons use the [simple-helm-toolchain](https://github.com/open-toolchain/simple-helm-toolchain) template, which uses a classic pipeline structure. The second two buttons (indicated by "Secured") use the [secure-kube-toolchain](https://github.com/open-toolchain/secure-kube-toolchain) template, which uses a "Git secure" pipeline structure. Both toolchain template options offer a code repository, delivery pipeline(s), and web IDE.
 
