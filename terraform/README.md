@@ -34,7 +34,7 @@ Follow these two easy steps to create an IBM Cloud Schematics workspace and appl
 
 ### Step 1: Create an IBM Cloud Schematics workspace
 
-Click one of the following options for the cluster deployment target and toolchain pipeline type. This action takes you to the "Create a Schematics Workspace" page. Complete the required fields on that page, and then click **Create**.
+Click one of the following options for the cluster deployment target and toolchain pipeline type. This action takes you to the "Deploy to IBM Cloud" page, where you create a Schematics workspace. Complete the required fields on that page, and then click **Create**.
 
 > **Note:** Based on which option you select, the corresponding Terraform template from this repository is automatically imported into the new workspace. The Terraform engine version will be v0.12.
 
@@ -50,7 +50,7 @@ Click one of the following options for the cluster deployment target and toolcha
 
 2. Optional. After you enter all the required values for the variables, click **Save changes** to save those values for future use within the same workspace.
 
-3. Optional. Click **Generate plan**. This action creates a Terraform execution plan, which also checks your configuration for syntax errors. It takes you to the “Activity” page, where you can review log files for errors and IBM Cloud resources that must be created, modified, or deleted to achieve the state of the Terraform template.  
+3. Optional. Click **Generate plan**. This action creates a Terraform execution plan and checks your configuration for syntax errors. On the Schematics “Activity” page, you can review log files for errors and IBM Cloud resources that must be created, modified, or deleted to achieve the state of the Terraform template.
 
 4. After you enter all the values for the variables and are satisfied with the changes, click **Apply plan**.
   **Note:** This step takes some time to complete (usually between 20-30 minutes, but it can take longer), due to the creation of a new Kubernetes cluster.
