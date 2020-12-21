@@ -30,7 +30,7 @@ In Step 1, the first two buttons use the [simple-helm-toolchain](https://github.
 
 ## Steps
 
-Follow these two easy steps to create an IBM Cloud Schematics workspace and apply a Terraform execution plan. When you apply the plan, a Kubernetes cluster is created, and a Node.js Express application is deployed to it by using an IBM Cloud DevOps toolchain.
+Follow these two easy steps to create an IBM Cloud Schematics workspace and apply a Terraform execution plan. When you apply the plan, a Kubernetes or OpenShift cluster is created, and a Node.js Express application is deployed to it by using an IBM Cloud DevOps toolchain.
 
 ### Step 1: Create an IBM Cloud Schematics workspace
 
@@ -53,19 +53,19 @@ Click one of the following options for the cluster deployment target and toolcha
 3. Optional. Click **Generate plan**. This action creates a Terraform execution plan and checks your configuration for syntax errors. On the Schematics “Activity” page, you can review log files for errors and IBM Cloud resources that must be created, modified, or deleted to achieve the state of the Terraform template.
 
 4. After you enter all the values for the variables and are satisfied with the changes, click **Apply plan**.
-  **Note:** This step takes some time to complete (usually between 20-30 minutes, but it can take longer), due to the creation of a new Kubernetes cluster.
+  **Note:** This step takes some time to complete (usually between 20-30 minutes, but it can take longer), due to the creation of a new Kubernetes or OpenShift cluster.
 
 5. Follow the progress of this step by clicking the **View log** link next to the corresponding step.
 
 6. After the plan is applied, view the URL to the generated IBM Cloud DevOps toolchain, which is located near the end of the log file on a line that begins with "View the toolchain at:."
 
->IMPORTANT: If you apply your plan a second time, the previously created Kubernetes cluster and any applications deployed to it are destroyed, and a new cluster is created.
+>IMPORTANT: If you apply your plan a second time, the previously created Kubernetes or OpenShift cluster and any applications deployed to it are destroyed, and a new cluster is created.
 
 ## Next steps
 
 For information about viewing your app, see [Monitor application health](https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-scalable-webapp-kubernetes#scalable-webapp-kubernetes-monitor_application)
 
-For information about scaling your app. see [Scale Kubernetes pods](https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-scalable-webapp-kubernetes#scalable-webapp-kubernetes-scale_cluster).
+For information about scaling your app, see [Scale Kubernetes pods](https://cloud.ibm.com/docs/solution-tutorials?topic=solution-tutorials-scalable-webapp-kubernetes#scalable-webapp-kubernetes-scale_cluster).
 
 ## Related information
 
