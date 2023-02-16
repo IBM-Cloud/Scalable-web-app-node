@@ -34,17 +34,17 @@ variable "default_pool_size" {
 
 variable "private_vlan_num" {
   type        = string
-  description = "Number for private VLAN from `ibmcloud ks vlans --zone <ZONE>`"
+  description = "Number for private VLAN from `ibmcloud ks vlans ls --zone <ZONE>`"
 }
 
 variable "public_vlan_num" {
   type        = string
-  description = "Number for public VLAN from `ibmcloud ks vlans --zone <ZONE>`"
+  description = "Number for public VLAN from `ibmcloud ks vlans ls --zone <ZONE>`"
 }
 
 variable "kube_version" {
-  default     = "4.5.18_openshift"
-  description = "Version of Kubernetes to apply to the new OpenShift cluster"
+  default     = "4.11_openshift"
+  description = "Version of Kubernetes to apply to the new OpenShift cluster (`ibmcloud ks versions`)"
 }
 
 variable "cluster_namespace" {
