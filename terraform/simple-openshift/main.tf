@@ -27,6 +27,7 @@ resource "ibm_container_cluster" "cluster" {
   default_pool_size = var.default_pool_size
   machine_type      = var.machine_type
   hardware          = var.hardware
+  kube_version      = "4.11_openshift"
   public_vlan_id    = "vlan"
   private_vlan_id   = "vlan"
   resource_group_id = data.ibm_resource_group.group.id
