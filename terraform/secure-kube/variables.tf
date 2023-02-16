@@ -32,21 +32,6 @@ variable "default_pool_size" {
   description = "Number of worker nodes for the new Kubernetes cluster"
 }
 
-variable "private_vlan_num" {
-  type        = string
-  description = "Number for private VLAN from `ibmcloud ks vlans --zone <ZONE>`"
-}
-
-variable "public_vlan_num" {
-  type        = string
-  description = "Number for public VLAN from `ibmcloud ks vlans --zone <ZONE>`"
-}
-
-variable "kube_version" {
-  default     = "1.18"
-  description = "Version of Kubernetes to apply to the new Kubernetes cluster"
-}
-
 variable "cluster_namespace" {
   type        = string
   description = "Kubernetes namespace to deploy into. NOTE: If the namespace does not exist, it will be created."
