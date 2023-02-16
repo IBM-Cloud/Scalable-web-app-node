@@ -33,6 +33,21 @@ variable "default_pool_size" {
   description = "Number of worker nodes for the new OpenShift cluster"
 }
 
+variable "private_vlan_num" {
+  type        = string
+  description = "Number for private VLAN from `ibmcloud ks vlans ls --zone <ZONE>`"
+}
+
+variable "public_vlan_num" {
+  type        = string
+  description = "Number for public VLAN from `ibmcloud ks vlans ls --zone <ZONE>`"
+}
+
+variable "kube_version" {
+  default     = "4.11_openshift"
+  description = "Version of Kubernetes to apply to the new OpenShift cluster"
+}
+
 variable "cluster_namespace" {
   type        = string
   description = "Kubernetes namespace to deploy into. NOTE: If the namespace does not exist, it will be created."
