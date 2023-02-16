@@ -1,5 +1,11 @@
 terraform {
   required_version = ">= 1.0"
+  required_providers {
+    ibm = {
+      source = "IBM-Cloud/ibm"
+      version = ">= 1.12.0"
+    }
+  }
 }
 
 resource "random_string" "random" {
@@ -21,9 +27,6 @@ resource "ibm_container_cluster" "cluster" {
   default_pool_size = var.default_pool_size
   machine_type      = var.machine_type
   hardware          = var.hardware
-  kube_version      = var.kube_version
-  public_vlan_id    = var.public_vlan_num
-  private_vlan_id   = var.private_vlan_num
   resource_group_id = data.ibm_resource_group.group.id
 }
 
