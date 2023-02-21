@@ -32,14 +32,14 @@ variable "default_pool_size" {
   description = "Number of worker nodes for the new OpenShift cluster"
 }
 
-variable "private_vlan_num" {
+variable "private_vlan_id" {
   type        = string
-  description = "Number for private VLAN from `ibmcloud ks vlans ls --zone <ZONE>`"
+  description = "ID for private VLAN from `ibmcloud ks vlans ls --zone <ZONE>`"
 }
 
-variable "public_vlan_num" {
+variable "public_vlan_id" {
   type        = string
-  description = "Number for public VLAN from `ibmcloud ks vlans ls --zone <ZONE>`"
+  description = "ID for public VLAN from `ibmcloud ks vlans ls --zone <ZONE>`"
 }
 
 variable "kube_version" {
