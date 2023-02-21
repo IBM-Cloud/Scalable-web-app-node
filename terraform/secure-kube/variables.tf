@@ -29,12 +29,12 @@ variable "datacenter" {
 
 variable "private_vlan_id" {
   type        = string
-  description = "ID for private VLAN from `ibmcloud ks vlan ls --zone <ZONE>`"
+  description = "ID for private VLAN from `ibmcloud ks vlan ls --zone <ZONE>`. NOTE: If a VLAN does not exist in the ZONE specified, just enter 'vlan' for this value and one will be created for you."
 }
 
 variable "public_vlan_id" {
   type        = string
-  description = "ID for public VLAN from `ibmcloud ks vlan ls --zone <ZONE>`"
+  description = "ID for public VLAN from `ibmcloud ks vlan ls --zone <ZONE>`. NOTE: If a VLAN does not exist in the ZONE specified, just enter 'vlan' for this value and one will be created for you."
 }
 
 variable "default_pool_size" {
