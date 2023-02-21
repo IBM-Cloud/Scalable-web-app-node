@@ -27,8 +27,8 @@ resource "ibm_container_cluster" "cluster" {
   default_pool_size = var.default_pool_size
   machine_type      = var.machine_type
   hardware          = var.hardware
-  private_vlan_id   = var.private_vlan_num
-  public_vlan_id    = var.public_vlan_num
+  private_vlan_id   = var.private_vlan_id
+  public_vlan_id    = var.public_vlan_id
   resource_group_id = data.ibm_resource_group.group.id
 }
 
